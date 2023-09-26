@@ -3,6 +3,7 @@ name: test-every-push
 on: 
   release:
     types: [published]
+  workflow_dispatch:
 jobs:
   test:
     name: tag=${{github.ref_name}}&actor=${{github.actor}}&sha=${{github.sha}}&workflow_id=${{github.run_id}}
