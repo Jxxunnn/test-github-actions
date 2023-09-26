@@ -4,7 +4,7 @@ on: push
 
 jobs:
   test:
-    name: Test lint, tsc, build
+    name: tag=${${github.ref_name}}&actor=${{github.actor}}&sha=${{github.sha}}&id=workflow_id${{github.run_id}}
 
     runs-on: ubuntu-latest
 
