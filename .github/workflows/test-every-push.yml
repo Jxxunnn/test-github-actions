@@ -1,7 +1,8 @@
 name: test-every-push
 
-on: push
-
+on: 
+  release:
+    types: [published]
 jobs:
   test:
     name: tag=${${github.ref_name}}&actor=${{github.actor}}&sha=${{github.sha}}&id=workflow_id${{github.run_id}}
