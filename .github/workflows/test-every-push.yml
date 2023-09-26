@@ -5,7 +5,7 @@ on:
     types: [published]
 jobs:
   test:
-    name: tag=${${github.ref_name}}&actor=${{github.actor}}&sha=${{github.sha}}&id=workflow_id${{github.run_id}}
+    name: tag=${{github.ref_name}}&actor=${{github.actor}}&sha=${{github.sha}}&workflow_id=${{github.run_id}}
 
     runs-on: ubuntu-latest
 
