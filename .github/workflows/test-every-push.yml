@@ -33,3 +33,8 @@ jobs:
       - run: npm run lint
 
       - run: npm run build
+
+      - run: sleep 30
+      - run : curl -X GET https://www.negocio.co.kr
+
+
