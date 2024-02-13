@@ -1,4 +1,4 @@
-name: test-every-push
+name: test-push
 
 on: 
   push
